@@ -1,0 +1,24 @@
+{
+  "name": "animecalendar-backend",
+  "version": "1.0.0",
+  "description": "Anime Calendar's Backend - Schedule your seasonal anime to watch!",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Estremadoyro/AnimeCalendar-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Estremadoyro/AnimeCalendar-Backend/issues"
+  },
+  "homepage": "https://github.com/Estremadoyro/AnimeCalendar-Backend#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "typescript": "^4.6.4"
+  }
+}
