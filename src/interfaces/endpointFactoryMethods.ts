@@ -1,4 +1,4 @@
-import { EndpointType } from "src/types/endpointType";
+import { EndpointType } from "src/enums/endpointType";
 import { EndpointStructure } from "./endpointStructure";
 
 export interface EndpointFactoryMethods {

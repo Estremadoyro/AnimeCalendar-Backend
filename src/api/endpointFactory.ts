@@ -1,6 +1,6 @@
 import { AnimeCalendarAPI } from "src/interfaces/animeCalendarApi";
 import { EndpointFactoryMethods } from "src/interfaces/endpointFactoryMethods";
-import { EndpointType } from "src/types/endpointType";
+import { EndpointType } from "src/enums/endpointType";
 import { EndpointStructure } from "../interfaces/endpointStructure";
 import { AnimeEndpoints } from "./endpoints/animesEndpoints";
 import { UserEndpoints } from "./endpoints/userEndpoints";

@@ -3,7 +3,7 @@ import { EndpointFactory } from "./endpointFactory";
 import animesRouter from "./routes/animes";
 import userRouter from "./routes/user";
 import { EndpointStructure } from "src/interfaces/endpointStructure";
-import { EndpointType } from "src/types/endpointType";
+import { EndpointType } from "src/enums/endpointType";
 import { EndpointManager } from "../interfaces/endpointManager";
 import { AnimeCalendarAPI } from "src/interfaces/animeCalendarApi";
 

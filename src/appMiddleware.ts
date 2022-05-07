@@ -15,7 +15,7 @@ export class AppMiddleware implements IMiddleware {
 
   // Methods
   configureMiddleware(): void {
-    console.log("Configured middleware");
     this.app.use(express.json());
+    console.log("Configured middleware");
   }
 }

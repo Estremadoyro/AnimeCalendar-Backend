@@ -4,7 +4,8 @@ import { AppEndpoints } from "./api/appEndpoints";
 import { AnimeCalendarAPI } from "./interfaces/animeCalendarApi";
 import { EndpointManager } from "./interfaces/endpointManager";
 import { AppMiddleware, IMiddleware } from "./appMiddleware";
-import { AppServer, AnimeCalendarServer } from "./appServer";
+import { AppServer } from "./appServer";
+import { AnimeCalendarServer } from "./interfaces/animeCalendarServer";
 
 const main = () => {
   // Express
