@@ -1,11 +1,11 @@
 import express, { Router } from "express";
-import { AnimeCalendarAPI } from "../api";
 import { EndpointFactory } from "./endpointFactory";
-import animesRouter from "../routes/animes";
-import userRouter from "../routes/user";
+import animesRouter from "./routes/animes";
+import userRouter from "./routes/user";
 import { EndpointStructure } from "src/interfaces/endpointStructure";
-import { EndpointManager } from "src/interfaces/endpointManager";
-import { EndpointType } from "src/enumTypes/endpointEnum";
+import { EndpointType } from "src/types/endpointType";
+import { EndpointManager } from "../interfaces/endpointManager";
+import { AnimeCalendarAPI } from "src/interfaces/animeCalendarApi";
 
 export class AppEndpoints extends EndpointManager {
   // Properties
@@ -24,6 +24,7 @@ export class AppEndpoints extends EndpointManager {
     const endpoints: Array<EndpointStructure> = this.getEndpoints();
     const paths: Array<string> = this.getPaths(endpoints);
     this.configureRoutes(paths);
+    console.log("Configured endpoints");
   }
 
   // Endpoint objects
@@ -43,6 +44,7 @@ export class AppEndpoints extends EndpointManager {
   protected configureRoutes(paths: Array<string>): void {
     let routes: Array<Router> = [animesRouter, userRouter];
     paths.forEach((path, index) => {
+      console.log(`path: ${path}`);
       this.app.use(path, routes[index]);
     });
   }

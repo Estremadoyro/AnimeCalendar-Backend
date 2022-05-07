@@ -1,5 +1,5 @@
 import express from "express";
-import { AnimeCalendarAPI } from "src/api";
+import { AnimeCalendarAPI } from "./animeCalendarApi";
 import { EndpointStructure } from "./endpointStructure";
 
 export abstract class EndpointManager {

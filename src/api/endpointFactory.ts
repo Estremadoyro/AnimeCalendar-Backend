@@ -1,12 +1,9 @@
-import { AnimeCalendarAPI } from "src/api";
-import { EndpointType } from "src/enumTypes/endpointEnum";
+import { AnimeCalendarAPI } from "src/interfaces/animeCalendarApi";
+import { EndpointFactoryMethods } from "src/interfaces/endpointFactoryMethods";
+import { EndpointType } from "src/types/endpointType";
 import { EndpointStructure } from "../interfaces/endpointStructure";
-import { AnimeEndpoints } from "./animesEndpoints";
-import { UserEndpoints } from "./userEndpoints";
-
-export interface EndpointFactoryMethods {
-  getEndpoint(endpoint: EndpointType): EndpointStructure;
-}
+import { AnimeEndpoints } from "./endpoints/animesEndpoints";
+import { UserEndpoints } from "./endpoints/userEndpoints";
 
 export class EndpointFactory implements EndpointFactoryMethods {
   private api: AnimeCalendarAPI;

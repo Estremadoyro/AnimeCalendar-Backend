@@ -4,7 +4,7 @@ export interface IMiddleware {
   configureMiddleware(): void;
 }
 
-export class AppMiddleWare implements IMiddleware {
+export class AppMiddleware implements IMiddleware {
   // Properties
   app: express.Express;
 

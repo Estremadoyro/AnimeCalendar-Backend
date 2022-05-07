@@ -1,9 +1,10 @@
 import express from "express";
-import { AnimeCalendarAPI, API } from "./api";
-import { AppEndpoints } from "./enpoints/endpoints";
+import { API } from "./api/api";
+import { AppEndpoints } from "./api/appEndpoints";
+import { AnimeCalendarAPI } from "./interfaces/animeCalendarApi";
 import { EndpointManager } from "./interfaces/endpointManager";
-import { AppMiddleWare, IMiddleware } from "./middleware";
-import { AppServer, AnimeCalendarServer } from "./server";
+import { AppMiddleware, IMiddleware } from "./appMiddleware";
+import { AppServer, AnimeCalendarServer } from "./appServer";
 
 const main = () => {
   // Express
@@ -14,7 +15,7 @@ const main = () => {
   server.bootServer();
 
   // Middleware
-  const middleware: IMiddleware = new AppMiddleWare(app);
+  const middleware: IMiddleware = new AppMiddleware(app);
   middleware.configureMiddleware();
 
   // Database

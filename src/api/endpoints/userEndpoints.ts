@@ -1,5 +1,5 @@
-import { AnimeCalendarAPI } from "src/api";
-import { EndpointStructure } from "../interfaces/endpointStructure";
+import { AnimeCalendarAPI } from "src/interfaces/animeCalendarApi";
+import { EndpointStructure } from "../../interfaces/endpointStructure";
 
 export class UserEndpoints implements EndpointStructure {
   user: string = "user";
@@ -10,6 +10,6 @@ export class UserEndpoints implements EndpointStructure {
   }
 
   endpoint(): string {
-    return `${this.api.path}/${this.user}`;
+    return `/${this.api.path}/${this.user}`;
   }
 }

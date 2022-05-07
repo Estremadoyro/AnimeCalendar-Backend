@@ -1,8 +1,4 @@
-export abstract class AnimeCalendarAPI {
-  protected version: string;
-  protected api: string;
-  public path: string;
-}
+import { AnimeCalendarAPI } from "../interfaces/animeCalendarApi";
 
 export class API extends AnimeCalendarAPI {
   // Readonly properties

@@ -1,4 +1,4 @@
-import { AnimeCalendarAPI } from "src/api";
+import { AnimeCalendarAPI } from "./animeCalendarApi";
 
 export interface EndpointStructure {
   api: AnimeCalendarAPI;
